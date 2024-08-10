@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./src/style/styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <title>Club Lanches</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <i class="fa-solid fa-burger" id="nav_logo"> Club Food</i>
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Inicío</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+            </ul>
+            <button class="btn-default">
+                <span>
+                    <a href="buy.html" class="buy">Carrinho</a>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </span>
+            </button>
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Inicío</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+            </ul>
+            <button class="btn-default">
+                <a href="" class="buy">Carrinho</a>
+            </button>
+        </div>
+    </header>
+    <main id="content">
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title">
+                    O sabor que vai até
+                    <span>
+                        você
+                    </span>
+                </h1>
+                <p class="description">
+                    Uma explosão de sabor entregue na sua porta.
+                </p>
+                <div id="cta_buttons">
+                    <a href="#menu" class="btn-default">
+                        Ver Cardápio
+                    </a>
+                    <a href="tel:+5555555555" id="phone_button">
+                        <button class="btn-default">
+                            <i class="fa-solid fa-phone"></i>
+                        </button>
+                        (45) 99999-9999
+                    </a>
+                </div>
+                <div class="social-media-buttons">
+                    <a href="#">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+            <div id="banner">
+                <img src="./src/img/hero.png" alt="">
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2 class="section-title">
+                Cardápio
+            </h2>
+            <h3 class="section-subtitule">
+                Nossos pratos especiais
+            </h3>
+            <div id="dishes">
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="./src/img/dish.png" class="dish-image" alt="">
+                    <h3 class="dish-title">
+                        Poke Havaino
+                    </h3>
+                    <span class="dish-description">
+                        O Poke Havaiano é uma tigela saudável e saborosa com peixe cru marinado, arroz e ingredientes
+                        frescos.
+                    </span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$76,75</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="./src/img/dish2.png" class="dish-image" alt="">
+                    <h3 class="dish-title">
+                        Tostado Tropical com Salada Fresca
+                    </h3>
+                    <span class="dish-description">
+                        Um sanduíche clássico tostado, recheado e servido com uma salada fresca, combinando crocância e
+                        leveza em cada mordida.
+                    </span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$35,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="./src/img/dish3.png" class="dish-image" alt="">
+                    <h3 class="dish-title">
+                        Sopa de Salada
+                    </h3>
+                    <span class="dish-description">
+
+                        Uma sopa leve e nutritiva, combinando ingredientes frescos de salada em uma deliciosa e
+                        refrescante refeição.
+                    </span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$30,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="./src/img/dish4.png" class="dish-image" alt="">
+                    <h3 class="dish-title">
+                        Yakisoba do Chef
+                    </h3>
+                    <span class="dish-description">
+
+                        Yakisoba é um prato japonês de macarrão frito com vegetais crocantes e carnes, temperado com
+                        molho especial e finalizado com cebolinhas e flocos de peixe. Saboroso e rápido.
+                    </span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$20,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section id="testimonials">
+            <img src="./src/img/chef.png" id="testimonials_chef" alt="">
+            <div id="testimonials_content">
+                <h2 class="section-title">
+                    Avaliações
+                </h2>
+                <h3 class="section-subtitle">
+                    O Que Os Cliente Falam Sobrem Nós
+                </h3>
+                <div id="feedback">
+                    <div class="feedback">
+                        <img src="./src/img/avatar.png" class="feedback-avatar" alt="">
+                        <div class="feedback-content">
+                            <p>
+                                Ana Julia
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                Ótima comida, ingredientes frescos e atendimento excelente. Ambiente acolhedor e pratos deliciosos!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feedback">
+                        <img src="./src/img/pessoa.png" class="feedback-avatar" alt="">
+                        <div class="feedback-content">
+                            <p>
+                                Carlos Santos
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                Cardápio variado com sabores incríveis, equipe simpática e ambiente agradável. Altamente recomendado!
+                            </p>
+                        </div>
+                    </div>
+                    <button class="btn-default">
+                        Ver Mais Avaliações
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img src="./src/img/footer.svg" alt="">
+
+        <div id="footer_items">
+            <span id="copyright">
+                &copy 2024 Gabriel Teles
+            </span>
+            <div class="social-media-buttons">
+                <a href="#">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="./src/script/script.js"></script>
+</body>
+
+</html>
